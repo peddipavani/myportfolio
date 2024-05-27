@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/portfolio.html#education -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="./My Portfolio_files/portfolio.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+    <li><a href="http://127.0.0.1:5500/portfolio.html#home">Home</a></li>
+    <li><a href="http://127.0.0.1:5500/portfolio.html#about">About</a></li>
+    <li><a href="http://127.0.0.1:5500/portfolio.html#education">Education</a></li>
+    <li><a href="http://127.0.0.1:5500/portfolio.html#projects">Projects</a></li>
+    <li><a href="http://127.0.0.1:5500/portfolio.html#certifications">Certifications</a></li>
+    <li><a href="http://127.0.0.1:5500/portfolio.html#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <img class="pic" src="./My Portfolio_files/IMG_20231226_103003.jpg" alt="pic">
+  <h1>Welcome to My Portfolio</h1>
+  <p>This is where you can learn all about me and my projects.</p>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am Pavani, a passionate web developer with a love for creating beautiful and functional websites.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  
+    <div class="project">
+    <h3>Detection Of Retinopathy and Severity Level Classification</h3>
+    <p><strong>Duration:</strong> June 2023</p>
+    <p><strong>Technologies Used:</strong> Python, Scikit Learn</p>
+    <p><strong>Description:</strong> Led multidisciplinary team in developing deep learning model for early retinopathy detection. Collaborated with ophthalmologists to annotate diverse image dataset. Implemented CNNs achieving high accuracy in severity classification. Project advances automated diagnosis, promising better patient outcomes.</p>
+    </div>
+  
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <ul>
+            <li>B.Tech - Vignana Bharathi Institute Of Technology, Hyderabad (2023) - 80%</li>
+            <li>Intermediate - Sri Chaitanya Junior College, Hyderabad (2019) - 92%</li>
+            <li>SSC - Sharada High School (2017) - 9.3 GPA</li>
+        </ul>
+    </div>
+</section>
+
+<section id="certifications">
+    <div class="container">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certificate for completing the Cisco networking academics courses - C</li>
+            <li>Certificate for completing the Cisco networking academics courses - CCNA</li>
+            <li>Certification on AWS AI-ML VIRTUAL INTERNSHIP from AICTE-Edu Skills</li>
+            <li>Certification on TCS ion Career Edge in TCS</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Information</h2>
+  <p>Contact me at peddipavani05@gmail.com</p>
+  <p>H.no:17-183/1, Sri Nagar Colony, 
+    Nagarkurnool, 
+    Nagarkurnool-509209 </p>
+</section>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
